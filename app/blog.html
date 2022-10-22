@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+@@include('./components/structure/_head.html', {
+'lang':'en',
+'css': 'blog',
+'title': 'blog',
+'swiper': 'true',
+})
+
+<body class="blog lock">
+	<div class="preloader">
+		<div class="preloader__wrapper">
+			@@include('./components/icons/_logo.html')
+		</div>
+	</div>
+	<div class="wrapper">
+		@@include('./components/structure/_header.html')
+		<main>
+			<section class="hero">
+				<div class="hero__container">
+					<div class="hero__filter">
+						<div class="hero__filter-block">
+							<button class="hero__filter-btn-styles active1">Усі</button>
+							<button class="hero__filter-btn-styles ">Для батьків</button>
+							<button class="hero__filter-btn-styles ">Для корпоративних
+								клієнтів</button>
+						</div>
+						<div class="hero__filter-block-second">
+							<button class="hero__filter-btn-styles active2">По даті</button>
+							<button class="hero__filter-btn-styles ">За кількістю переглядів</button>
+						</div>
+					</div>
+					<div class="hero__body">
+						<div class="hero__blog-swiper swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									@@include('./components/base/_blog-slide.html', {
+									'img': 'blog_01',
+									'date': '03.09.2022',
+									'views': '515'
+									})
+								</div>
+								<div class="swiper-slide">
+									@@include('./components/base/_blog-slide.html', {
+									'img': 'gallery_09',
+									'date': '03.09.2022',
+									'views': '515'
+									})
+								</div>
+								<div class="swiper-slide">
+									@@include('./components/base/_blog-slide.html', {
+									'img': 'card6',
+									'date': '03.09.2022',
+									'views': '515'
+									})
+								</div>
+								<div class="swiper-slide">
+									@@include('./components/base/_blog-slide.html', {
+									'img': 'blog_01',
+									'date': '03.09.2022',
+									'views': '515'
+									})
+								</div>
+								<div class="swiper-slide">
+									@@include('./components/base/_blog-slide.html', {
+									'img': 'gallery_09',
+									'date': '03.09.2022',
+									'views': '515'
+									})
+								</div>
+								<div class="swiper-slide">
+									@@include('./components/base/_blog-slide.html', {
+									'img': 'card6',
+									'date': '03.09.2022',
+									'views': '515'
+									})
+								</div>
+							</div>
+						</div>
+						@@include('./components/base/_second-nav.html', {
+						'class': 'hero__blog-nav',
+						'prev': 'hero__blog-prev',
+						'next': 'hero__blog-next',
+						'pagination': 'hero__blog-pagination',
+						})
+					</div>
+				</div>
+			</section>
+			<section class="last">
+				<div class="last__container">
+					<p class="last__title">Який квест вас цікавить?</p>
+					@@include('./components/base/_propose-form.html')
+				</div>
+			</section>
+		</main>
+		@@include('./components/structure/_footer.html')
+	</div>
+	@@include('./components/structure/_scripts.html', {
+	'swiper': 'true',
+	'script': 'blog',
+	'url': 'false',
+	})
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+@@if (context.swiper == 'true') {
+<script src="js/swiper-bundle.min.js"></script>
+}
+
+@@if (context.url == 'true') {
+<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script> -->
+<script type="text/javascript">
+	function downloadJSAtOnload() {
+		let element2 = document.createElement("script");
+		element2.type = 'text/javascript';
+		element2.src = "https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js";
+		document.body.appendChild(element2);
+		let element = document.createElement("script");
+		element.src = "js/@@script.js";
+		document.body.appendChild(element);
+
+		setTimeout(() => {
+			const observer = lozad(); // lazy loads elements with default selector as ".lozad"
+			observer.observe();
+		}, 500);
+	}
+	if (window.addEventListener) {
+		window.addEventListener("load", downloadJSAtOnload, false);
+	} else if (window.attachEvent) {
+
+		window.attachEvent("onload", downloadJSAtOnload);
+	} else {
+		window.onload = downloadJSAtOnload;
+	}
+</script>
+}
+@@if (context.url == 'false') {
+<script type="text/javascript">
+	function downloadJSAtOnload() {
+		let element = document.createElement("script");
+		element.src = "js/@@script.js";
+		document.body.appendChild(element);
+
+		let viewportTop = document.documentElement.clientHeight
+		window.addEventListener("scroll", showPictures);
+		showPictures()
+		function showPictures(e) {
+			document.querySelectorAll("[data-src-webp]").forEach((el) => {
+				if (el.getBoundingClientRect().top <= viewportTop / 1.1) {
+					el.setAttribute("srcset", el.getAttribute("data-src-webp"));
+				}
+			});
+			document.querySelectorAll("[data-src-img]").forEach((el) => {
+				if (el.getBoundingClientRect().top <= viewportTop / 1.1) {
+					el.setAttribute("src", el.getAttribute("data-src-img"));
+					el.removeAttribute("style");
+				}
+			});
+		}
+
+	}
+	if (window.addEventListener) {
+		window.addEventListener("load", downloadJSAtOnload, false);
+	} else if (window.attachEvent) {
+
+		window.attachEvent("onload", downloadJSAtOnload);
+	} else {
+		window.onload = downloadJSAtOnload;
+	}
+</script>
+}

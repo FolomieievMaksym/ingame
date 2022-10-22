@@ -1,0 +1,148 @@
+<div class="product-pop-up">
+	<div class="product-pop-up__wrapper">
+		<div class="product-pop-up__container">
+			<div class="product-pop-up__body">
+				<div class="product-pop-up__close-icon">
+					<div class="product-pop-up__close-icon-wrapper">
+						<span></span><span></span>
+					</div>
+				</div>
+				<div class="product-pop-up__content">
+					<!-- todo -->
+					<div class="product-gallery">
+						<div class="product-gallery__big-wrap">
+							@@include('./_second-nav.html', {
+							'class': 'product-gallery__nav',
+							'prev': 'product-gallery__prev',
+							'next': 'product-gallery__next',
+							'pagination': 'product-gallery__pagination',
+							})
+							<div class="product-gallery__swiper-big swiper slider">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide product-gallery__slide-big">
+										<div class='product-gallery__image-big'>
+											<picture>
+												<source type='image/webp' data-src-webp="img/gallery/gallery_01.webp" srcset='@load.webp'>
+												<img style="width:1px; height: 1px;" data-src-img="img/gallery/gallery_01.jpg" src='@load.png' alt='Gallery photo'>
+											</picture>
+										</div>
+									</div>
+									<div class="swiper-slide product-gallery__slide-big">
+										<div class='product-gallery__image-big'>
+											<picture>
+												<source type='image/webp' data-src-webp="img/gallery/gallery_02.webp" srcset='@load.webp'>
+												<img style="width:1px; height: 1px;" data-src-img="img/gallery/gallery_02.jpg" src='@load.png' alt='Gallery photo'>
+											</picture>
+										</div>
+									</div>
+									<div class="swiper-slide product-gallery__slide-big">
+										<div class='product-gallery__image-big'>
+											<picture>
+												<source type='image/webp' data-src-webp="img/gallery/gallery_03.webp" srcset='@load.webp'>
+												<img style="width:1px; height: 1px;" data-src-img="img/gallery/gallery_03.jpg" src='@load.png' alt='Gallery photo'>
+											</picture>
+										</div>
+									</div>
+									<div class="swiper-slide product-gallery__slide-big">
+										<div class='product-gallery__image-big'>
+											<picture>
+												<source type='image/webp' data-src-webp="img/gallery/gallery_04.webp" srcset='@load.webp'>
+												<img style="width:1px; height: 1px;" data-src-img="img/gallery/gallery_04.jpg" src='@load.png' alt='Gallery photo'>
+											</picture>
+										</div>
+									</div>
+									<div class="swiper-slide product-gallery__slide-big">
+										<div class='product-gallery__image-big'>
+											<picture>
+												<source type='image/webp' data-src-webp="img/gallery/gallery_05.webp" srcset='@load.webp'>
+												<img style="width:1px; height: 1px;" data-src-img="img/gallery/gallery_05.jpg" src='@load.png' alt='Gallery photo'>
+											</picture>
+										</div>
+									</div>
+									<div class="swiper-slide product-gallery__slide-big">
+										<div class='product-gallery__image-big'>
+											<picture>
+												<source type='image/webp' data-src-webp="img/gallery/gallery_06.webp" srcset='@load.webp'>
+												<img style="width:1px; height: 1px;" data-src-img="img/gallery/gallery_06.jpg" src='@load.png' alt='Gallery photo'>
+											</picture>
+										</div>
+									</div>
+								</div>
+								<!-- @@include('./_slider-nav.html', {
+									'class': 'product-gallery__nav',
+									'prev': 'product-gallery__prev',
+									'next': 'product-gallery__next',
+									'pagination': 'product-gallery__pagination',
+								}) -->
+							</div>
+						</div>
+						<div class="product-gallery__small-wrap">
+							<div class="product-gallery__swiper-small swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide product-gallery__slide-small">
+										<div class='product-gallery__image-small'>
+											<picture>
+												<source type='image/webp' data-src-webp="img/gallery/gallery_01.webp" srcset='@load.webp'>
+												<img style="width:1px; height: 1px;" data-src-img="img/gallery/gallery_01.jpg" src='@load.png' alt='Gallery preview photo'>
+											</picture>
+										</div>
+									</div>
+									<div class="swiper-slide product-gallery__slide-small">
+										<div class='product-gallery__image-small'>
+											<picture>
+												<source type='image/webp' data-src-webp="img/gallery/gallery_02.webp" srcset='@load.webp'>
+												<img style="width:1px; height: 1px;" data-src-img="img/gallery/gallery_02.jpg" src='@load.png' alt='Gallery preview photo'>
+											</picture>
+										</div>
+									</div>
+									<div class="swiper-slide product-gallery__slide-small">
+										<div class='product-gallery__image-small'>
+											<picture>
+												<source type='image/webp' data-src-webp="img/gallery/gallery_03.webp" srcset='@load.webp'>
+												<img style="width:1px; height: 1px;" data-src-img="img/gallery/gallery_03.jpg" src='@load.png' alt='Gallery preview photo'>
+											</picture>
+										</div>
+									</div>
+									<div class="swiper-slide product-gallery__slide-small">
+										<div class='product-gallery__image-small'>
+											<picture>
+												<source type='image/webp' data-src-webp="img/gallery/gallery_04.webp" srcset='@load.webp'>
+												<img style="width:1px; height: 1px;" data-src-img="img/gallery/gallery_04.jpg" src='@load.png' alt='Gallery preview photo'>
+											</picture>
+										</div>
+									</div>
+									<div class="swiper-slide product-gallery__slide-small">
+										<div class='product-gallery__image-small'>
+											<picture>
+												<source type='image/webp' data-src-webp="img/gallery/gallery_05.webp" srcset='@load.webp'>
+												<img style="width:1px; height: 1px;" data-src-img="img/gallery/gallery_05.jpg" src='@load.png' alt='Gallery preview photo'>
+											</picture>
+										</div>
+									</div>
+									<div class="swiper-slide product-gallery__slide-small">
+										<div class='product-gallery__image-small'>
+											<picture>
+												<source type='image/webp' data-src-webp="img/gallery/gallery_06.webp" srcset='@load.webp'>
+												<img style="width:1px; height: 1px;" data-src-img="img/gallery/gallery_06.jpg" src='@load.png' alt='Gallery preview photo'>
+											</picture>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- todo -->
+					<!-- @@include('./_product-gallery.html') -->
+					<!-- @@include('./_product-gallery-pop-up.html') -->
+					<div class="product-pop-up__form">
+						@@include('./_gal-form.html', {
+						'text': 'Забронювати',
+						'class': 'product-pop-up__close'
+						})
+					</div>
+				</div>
+				<p class="product-pop-up__text">Ужасы с актером по сюжету фильма "Silent Hill". Атмосфера заброшенного детского приюта и монстр, который следует за вами по пятам... Вам лучше не кричать, потому что он услышит!</p>
+			</div>
+		</div>
+	</div>
+</div>

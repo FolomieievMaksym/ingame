@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+@@include('./components/structure/_head.html', {
+'lang':'en',
+'css': 'cart',
+'title': 'cart',
+'swiper': 'true',
+})
+
+
+<body class="cart lock">
+	<div class="preloader">
+		<div class="preloader__wrapper">
+			@@include('./components/icons/_logo.html')
+		</div>
+	</div>
+	<div class="wrapper">
+		@@include('./components/structure/_header.html')
+		<main>
+			<section class="hero">
+				<div class="hero__container">
+					<div class="hero__head">
+						<ul class="hero__steps">
+							<li class="active">Крок 1</li>
+							<li>Крок 2</li>
+							<li>Крок 3</li>
+							<li>Крок 4</li>
+						</ul>
+					</div>
+					<div class="hero__body">
+						<div class="hero__left">
+							<p class="hero__title">Ваше замовлення:</p>
+							<div class="hero__left-pre-wrapper">
+								<div class="hero__left-wrapper">
+									<div class="hero__left-items">
+										<div class="hero__left-item hero-left-item">
+											<p class="hero-left-item__name">Квест в коробці НАЗВА 2</p>
+											<div class="hero-left-item__buttons">
+												<div class="hero-left-item__minus"><span></span></div>
+												<p class="hero-left-item__amount">1</p>
+												<div class="hero-left-item__plus"><span></span><span></span></div>
+											</div>
+											<p class="hero-left-item__price">300 грн</p>
+											<div class="hero-left-item__trash">
+												<i class="trash"></i>
+											</div>
+										</div>
+										<div class="hero__left-item hero-left-item">
+											<p class="hero-left-item__name">Сертифікат на квест кімнату Врятувати
+												професора Харріса</p>
+											<div class="hero-left-item__buttons">
+												<div class="hero-left-item__minus"><span></span></div>
+												<p class="hero-left-item__amount">1</p>
+												<div class="hero-left-item__plus"><span></span><span></span></div>
+											</div>
+											<p class="hero-left-item__price">300 грн</p>
+											<div class="hero-left-item__trash">
+												<i class="trash"></i>
+											</div>
+										</div>
+										<div class="hero__left-item hero-left-item">
+											<p class="hero-left-item__name">Сертифікат на квест кімнату Врятувати
+												професора Харріса</p>
+											<div class="hero-left-item__buttons">
+												<div class="hero-left-item__minus"><span></span></div>
+												<p class="hero-left-item__amount">1</p>
+												<div class="hero-left-item__plus"><span></span><span></span></div>
+											</div>
+											<p class="hero-left-item__price">300 грн</p>
+											<div class="hero-left-item__trash">
+												<i class="trash"></i>
+											</div>
+										</div>
+										<div class="hero__left-item hero-left-item">
+											<p class="hero-left-item__name">Сертифікат на квест кімнату Врятувати
+												професора Харріса</p>
+											<div class="hero-left-item__buttons">
+												<div class="hero-left-item__minus"><span></span></div>
+												<p class="hero-left-item__amount">1</p>
+												<div class="hero-left-item__plus"><span></span><span></span></div>
+											</div>
+											<p class="hero-left-item__price">300 грн</p>
+											<div class="hero-left-item__trash">
+												<i class="trash"></i>
+											</div>
+										</div>
+										<div class="hero__left-item hero-left-item">
+											<p class="hero-left-item__name">Сертифікат на квест кімнату Врятувати
+												професора Харріса</p>
+											<div class="hero-left-item__buttons">
+												<div class="hero-left-item__minus"><span></span></div>
+												<p class="hero-left-item__amount">1</p>
+												<div class="hero-left-item__plus"><span></span><span></span></div>
+											</div>
+											<p class="hero-left-item__price">300 грн</p>
+											<div class="hero-left-item__trash">
+												<i class="trash"></i>
+											</div>
+										</div>
+										<div class="hero__left-item hero-left-item">
+											<p class="hero-left-item__name">Квест в коробці НАЗВА 2</p>
+											<div class="hero-left-item__buttons">
+												<div class="hero-left-item__minus"><span></span></div>
+												<p class="hero-left-item__amount">1</p>
+												<div class="hero-left-item__plus"><span></span><span></span></div>
+											</div>
+											<p class="hero-left-item__price">300 грн</p>
+											<div class="hero-left-item__trash">
+												<i class="trash"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button class="hero__button">Продовжити покупки</button>
+						</div>
+						<div class="hero__right">
+							<div class="hero__right-head">
+								<p class="hero__right-subtitle">Промокод:</p>
+								<div class="hero__right-input">
+									<input type="text" placeholder="32648">
+								</div>
+							</div>
+							<ul class="hero__right-list">
+								<li>
+									<p class="hero__right-subtitle">Повна вартість:</p>
+									<p class="hero__right-price">1100 грн</p>
+								</li>
+								<li>
+									<p class="hero__right-subtitle">Знижка:</p>
+									<p class="hero__right-price">165 грн</p>
+								</li>
+								<li>
+									<p class="hero__right-subtitle">Вартість з урахуванням знижки:</p>
+									<p class="hero__right-price">935 грн</p>
+								</li>
+							</ul>
+							<p class="hero__right-subtitle">Менеджер зв'яжеться з вами для вирішення питання стосовно доставки замовлення</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="tabs">
+				<div class="tabs__container">
+					<div class="tabs__top">
+						<div class="tabs__step active">
+							<p class="tabs__title">Особисті дані замовніка</p>
+							<div class="tabs__input-row">
+								<div class="tabs__input">
+									<input type="text" placeholder="Ім’я та призвище">
+								</div>
+								<div class="tabs__input">
+									<input type="text" placeholder="E-mail *">
+								</div>
+								<div class="tabs__input">
+									<input type="text" placeholder="Ваш номер телефону *">
+								</div>
+							</div>
+						</div>
+						<div class="tabs__step ">
+							<p class="tabs__title">Данні отримувача</p>
+							<div class="tabs__field-wrap tabs__field-wrap-check">
+								<input class="tabs__check" type="checkbox" name="check" value="" id="checks2">
+								<label class="tabs__sign" for="checks2">Аналогічні особистим данним <span>(автозаповнення полів)</span>
+								</label>
+							</div>
+							<div class="tabs__input-row">
+								<div class="tabs__input">
+									<input type="text" placeholder="Ім’я та призвище">
+								</div>
+								<div class="tabs__input">
+									<input type="text" placeholder="E-mail *">
+								</div>
+								<div class="tabs__input">
+									<input type="text" placeholder="Ваш номер телефону *">
+								</div>
+							</div>
+						</div>
+						<div class="tabs__step ">
+							<p class="tabs__title">Доставка</p>
+							<div class="tabs__select-row">
+								<div class="tabs__spoiler">
+									<div class="tabs__spoiler-preview">
+										<p class="tabs__spoiler-title">Оберіть варіант доставки</p>
+										<div class="tabs__spoiler-icon">
+											<svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 1L6 5L11 1" stroke="#28303F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</div>
+									</div>
+									<div class="tabs__spoiler-wrapper">
+										<div class="tabs__spoiler-body">
+											<ul class="tabs__spoiler-list">
+												<li>Ваш текст 1</li>
+												<li>Ваш текст 2</li>
+												<li>Ваш текст 3</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="tabs__spoiler">
+									<div class="tabs__spoiler-preview">
+										<p class="tabs__spoiler-title">Оберіть відділення НП</p>
+										<div class="tabs__spoiler-icon">
+											<svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 1L6 5L11 1" stroke="#28303F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</div>
+									</div>
+									<div class="tabs__spoiler-wrapper">
+										<div class="tabs__spoiler-body">
+											<ul class="tabs__spoiler-list">
+												<li>Ваш текст 1</li>
+												<li>Ваш текст 2</li>
+												<li>Ваш текст 3</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__step ">
+							<p class="tabs__title">Варіанти оплати</p>
+							<div class="tabs__select-row">
+								<div class="tabs__spoiler">
+									<div class="tabs__spoiler-preview">
+										<p class="tabs__spoiler-title">Варіанти оплати</p>
+										<div class="tabs__spoiler-icon">
+											<svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 1L6 5L11 1" stroke="#28303F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</div>
+									</div>
+									<div class="tabs__spoiler-wrapper">
+										<div class="tabs__spoiler-body">
+											<ul class="tabs__spoiler-list">
+												<li>Ваш текст 1</li>
+												<li>Ваш текст 2</li>
+												<li>Ваш текст 3</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tabs__bottom">
+						<div class="tabs__field-wrap tabs__field-wrap-check">
+							<input class="tabs__check" type="checkbox" name="check" value="" id="checks">
+							<label class="tabs__sign" for="checks">Згода на обробку персональних данних
+								<a class="tabs__link">Політика конфіденційності</a></label>
+						</div>
+						<div class="tabs__buttons-row">
+							<button class="tabs__back-button disabled">Назад</button>
+							<button class="tabs__next-button">Далі</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="thanks">
+				<div class="thanks__container">
+					<p class="thanks__text"><span>Дякуємо</span> за замовлення</p>
+					<a href="index.html" class="thanks__link">Повернутись на головну сторінку</a>
+				</div>
+			</section>
+		</main>
+		@@include('./components/structure/_footer.html')
+	</div>
+	@@include('./components/structure/_scripts.html', {
+	'swiper': 'true',
+	'script': 'cart',
+	'url': 'false',
+	})
+
+</body>
+
+</html>

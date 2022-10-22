@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+@@include('./components/structure/_head.html', {
+'lang':'en',
+'css': 'article',
+'title': 'article',
+'swiper': 'true',
+})
+
+
+<body class="article-page lock">
+	<div class="preloader">
+		<div class="preloader__wrapper">
+			@@include('./components/icons/_logo.html')
+		</div>
+	</div>
+	<div class="wrapper">
+		@@include('./components/structure/_header.html')
+		<main>
+			<section class="show-article">
+				<div class="show-article__container">
+					<div class="show-article__view-block">
+						<div class="show-article__date">
+							<i class="calendar"></i>
+							<time class="show-article__par">03.09.2022</time>
+						</div>
+						<div class="show-article__view">
+							<i class="eye"></i>
+							<span class="show-article__par">515</span>
+						</div>
+					</div>
+					<div class="show-article__picture">
+						<picture>
+							<source type='image/webp' data-src-webp="img/gallery/gallery_03.webp" srcset='@load.webp'>
+							<img style="width:1px; height: 1px;" data-src-img="img/gallery/gallery_03.jpg" src="@img/load.png" alt="children">
+						</picture>
+					</div>
+				</div>
+			</section>
+			<section class="article">
+				<div class="article__container">
+					<h1 class="article__title">Назва статті</h1>
+					<div class="article__block-main">
+						<div class="article__picture">
+							<picture>
+								<source type='image/webp' data-src-webp="img/gallery/gallery_04.webp" srcset='@load.webp'>
+								<img style="width:1px; height: 1px;" data-src-img="img/gallery/gallery_04.jpg" src="@img/load.png" alt="child">
+							</picture>
+						</div>
+						<p class="article__text">Квест-комнаты или квесты в реальности – это один из самых молодых форматов отдыха в
+							Украине. В 2014 году мы впервые узнали, что такое квест-комната. Этот невероятный объемный мир оказался
+							настолько захватывающим, что в тот же день мы решили, что непременно станем его частью! На тот момент в
+							Днепре уже было много квест-комнат. Но мы не пошли по их пути. Квест-комнаты или квесты в реальности – это
+							один из самых молодых форматов отдыха в
+							Украине. В 2014 году мы впервые узнали, что такое квест-комната. Этот невероятный объемный мир оказался
+							настолько захватывающим, что в тот же день мы решили, что непременно станем его частью! На тот момент в
+							Днепре уже было много квест-комнат. Но мы не пошли по их пути.</p>
+					</div>
+					<div class="article__spoiler">
+						<div class="article__spoiler-preview article__spoiler-preview-one">
+							<div class="article__decor"></div>
+							<p class="article__text">Квест-комнаты или квесты в реальности – это один из самых молодых форматов отдыха
+								в Украине. В 2014 году мы впервые узнали, что такое квест-комната. Этот невероятный объемный мир
+								оказался настолько захватывающим, что в тот же день мы решили, что непременно станем его частью! На тот
+								момент в Днепре уже было много квест-комнат. Но мы не пошли по их пути.</p>
+						</div>
+						<div class="article__spoiler-wrapper">
+							<div class="article__spoiler-body">
+								<p class="article__text">Квест-комнаты или квесты в реальности – это один из самых молодых форматов
+									отдыха в Украине. В 2014 году мы впервые узнали, что такое квест-комната. Этот невероятный объемный
+									мир оказался настолько захватывающим, что в тот же день мы решили, что непременно станем его частью!
+									На тот момент в Днепре уже было много квест-комнат. Но мы не пошли по их пути.</p>
+							</div>
+						</div>
+					</div>
+					<div class="article__wrap-btn">
+						<button class="article__btn article__btn-add">Дивитись більше</button>
+					</div>
+					<div class="article__picture-next">
+						<picture>
+							<source type='image/webp' data-src-webp="img/gallery/gallery_05.webp" srcset='@load.webp'>
+							<img style="width:1px; height: 1px;" data-src-img="img/gallery/gallery_05.jpg" src="@img/load.png" alt="game-children">
+						</picture>
+					</div>
+					<div class="article__spoiler">
+						<div class="article__spoiler-preview article__spoiler-preview-second">
+							<div class="article__decor article__decor-add"></div>
+							<p class="article__text">Квест-комнаты или квесты в реальности – это один из самых молодых форматов отдыха
+								в Украине. В 2014 году мы впервые узнали, что такое квест-комната. Этот невероятный объемный мир
+								оказался настолько захватывающим, что в тот же день мы решили, что непременно станем его частью! На тот
+								момент в Днепре уже было много квест-комнат. Но мы не пошли по их пути.</p>
+						</div>
+						<div class="article__spoiler-wrapper article__spoiler-wrapper-add">
+							<div class="article__spoiler-body">
+								<p class="article__text">Квест-комнаты или квесты в реальности – это один из самых молодых форматов
+									отдыха в Украине. В 2014 году мы впервые узнали, что такое квест-комната. Этот невероятный объемный
+									мир оказался настолько захватывающим, что в тот же день мы решили, что непременно станем его частью! На тот момент в Днепре уже было много квест-комнат. Но мы не пошли по их пути.</p>
+							</div>
+						</div>
+					</div>
+					<div class="article__wrap-btn article__wrap-btn-add">
+						<button class="article__btn article__btn-add-more">Дивитись більше</button>
+					</div>
+				</div>
+			</section>
+			@@include('./components/base/_video.html')
+			<section class="card-form">
+				<div class="card-form__container">
+					<div class="card-form__head">
+						<div class="card-form__head-left">
+							<div class='card-form__image'>
+								<picture>
+									<source type='image/webp' data-src-webp="img/gallery/author_01.webp" srcset='@load.webp'>
+									<img style="width:1px; height: 1px;" data-src-img="img/gallery/author_01.jpg" src='@load.png' alt='Author photo'>
+								</picture>
+							</div>
+							<div class="card-form__about">
+								<p class="card-form__about-name">Юлія Санина</p>
+								<p class="card-form__about-desc">Співачка</p>
+								<p class="card-form__about-item card-form__about-item_absolute">03.09.2022</p>
+							</div>
+							<p class="card-form__author">Автор статті</p>
+						</div>
+						<div class="card-form__head-right">
+							<p class="card-form__par">Поділіться
+								в соц.мережах:</p>
+							<div class="card-form__soc-block">
+								<a href="#" target="_blank" class="card-form__soc-link"><i class="instagram"></i></a>
+								<a href="#" target="_blank" class="card-form__soc-link"><i class="facebook"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="card-form__content">
+						<div class="card-form__content-block">
+							<div class="card-form__content-head">
+								<p class="card-form__content-name">Олена Малахова</p>
+								<div class="card-form__time-block">
+									<i class="calendar"></i>
+									<time class="card-form__content-time">03.09.2022</time>
+								</div>
+							</div>
+							<p class="card-form__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+								laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing
+								elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+								nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+						</div>
+						<div class="card-form__content-block">
+							<div class="card-form__content-head">
+								<p class="card-form__content-name">Олена Малахова</p>
+								<div class="card-form__time-block">
+									<i class="calendar"></i>
+									<time class="card-form__content-time">03.09.2022</time>
+								</div>
+							</div>
+							<p class="card-form__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+								laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+					</div>
+					<div class="card-form__field-block">
+						<h3 class="card-form__subtitle">Заголовок з закликом купити </h3>
+						<div class="card-form__field-wrap-main">
+							<div class="card-form__field-wrap">
+								<div class="card-form__field">
+									<textarea name="textarea" placeholder="Ваш коментар"></textarea>
+								</div>
+							</div>
+							<div class="card-form__field-wrap">
+								<input class="card-form__field" type="text" name="" value="" placeholder="Ім’я та призвище">
+							</div>
+							<div class="card-form__field-wrap">
+								<input class="card-form__field" type="text" name="" value="" placeholder="E-mail">
+							</div>
+							<button class="card-form__btn">Залишити коментар</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="last">
+				<div class="last__container">
+					<p class="last__title">Популярні статті</p>
+					<div class="last__body">
+						<div class="last__swiper swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									@@include('./components/base/_blog-slide.html', {
+									'img': 'blog_01',
+									'date': '03.09.2022',
+									'views': '515'
+									})
+								</div>
+								<div class="swiper-slide">
+									@@include('./components/base/_blog-slide.html', {
+									'img': 'gallery_09',
+									'date': '03.09.2022',
+									'views': '515'
+									})
+								</div>
+								<div class="swiper-slide">
+									@@include('./components/base/_blog-slide.html', {
+									'img': 'card6',
+									'date': '03.09.2022',
+									'views': '515'
+									})
+								</div>
+								<div class="swiper-slide">
+									@@include('./components/base/_blog-slide.html', {
+									'img': 'blog_01',
+									'date': '03.09.2022',
+									'views': '515'
+									})
+								</div>
+								<div class="swiper-slide">
+									@@include('./components/base/_blog-slide.html', {
+									'img': 'gallery_09',
+									'date': '03.09.2022',
+									'views': '515'
+									})
+								</div>
+								<div class="swiper-slide">
+									@@include('./components/base/_blog-slide.html', {
+									'img': 'card6',
+									'date': '03.09.2022',
+									'views': '515'
+									})
+								</div>
+							</div>
+						</div>
+						@@include('./components/base/_second-nav.html', {
+						'class': 'last-nav',
+						'prev': 'last-prev',
+						'next': 'last-next',
+						'pagination': 'last-pagination',
+						})
+					</div>
+				</div>
+
+			</section>
+		</main>
+		@@include('./components/structure/_footer.html')
+	</div>
+	@@include('./components/structure/_scripts.html', {
+	'swiper': 'true',
+	'script': 'article',
+	'url': 'false',
+	})
+
+
+</body>
+
+</html>

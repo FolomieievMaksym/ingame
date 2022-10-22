@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+@@include('./components/structure/_head.html', {
+'lang':'en',
+'css': 'quest2',
+'title': 'quest2',
+'swiper': 'true',
+})
+
+
+<body class="quest2 lock">
+	<div class="preloader">
+		<div class="preloader__wrapper">
+			@@include('./components/icons/_logo.html')
+		</div>
+	</div>
+	<div class="wrapper">
+		@@include('./components/structure/_header.html')
+		<main>
+			@@include('./components/base/_quest-head.html', {
+			'img': 'gallery_09',
+			'title': 'Виїзні квести Among Us',
+			'text': "Дніпро, Проводиться під замовлення на вашій территорії чи в нашому приміщенні для квестів",
+			})
+			<section class="hero">
+				<div class="hero__container">
+					@@include('./components/base/_horizontal-gallery.html', {
+					'class': 'horizontal-gallery__swiper-big-1'
+					})
+					@@include('./components/base/_horizontal-gallery-pop-up.html')
+					<div class="hero__form">
+						@@include('./components/base/_gal-form.html', {
+						'text': 'Забронювати',
+						'location': '#toorder',
+						})
+					</div>
+				</div>
+			</section>
+			@@include('./components/base/_video.html', {
+			'text': 'Чародей Гарри хотел спасти всех нас от страшного вируса! Он разработал вакцину, но эксперимент вышел из-под контроля, и Гарри превратился в зомби! Наша задача - отыскать рецепт вакцины и вернуть Гарри человеческий облик! За это он щедро вознаградит нас своей магией!',
+			'title': 'При участии фокусника-иллюзиониста Игоря Дегтярева!'
+			})
+			@@include('./components/base/_order-quest-pop-up.html')
+			@@include('./components/base/_product-pop-up.html')
+			<section class="step1" id="toorder">
+				<div class="step1__container">
+					<div class="step1__head">
+						<p>Порахуйте вартість та забронюйте виїздний квест</p>
+						<p>Вартість залежить від обраного пакету, кількості учасників та
+							додаткових
+							послуг.
+					</div>
+					</p>
+					<p class="step1__title step-title"><span>Крок 1:</span> Оберіть пакет</p>
+					<div class="step1__inner">
+						<div class="step1__swiper swiper slider">
+							<div class="swiper-wrapper step1__wrapper">
+								<div class="swiper-slide step1__slide">
+									<div class="pack-card pack-card--eco">
+										<p class="pack-card__title">
+											Економ
+										<ul class="pack-card__list">
+											<li class="pack-card__item">
+												5 локацій з випробуваннями
+											</li>
+											<li class="pack-card__item">
+												Зона відпочинку на 25 особ. Тут Ви можете пити італійську
+												зернову каву або чай та спостерігати за грою.
+											</li>
+											<li class="pack-card__item">
+												Супровід досвідчених інструкторів
+											</li>
+											<li class="pack-card__item">
+												Мильні кульки
+											</li>
+											<li class="pack-card__item">
+												Зона відпочинку на 25 особ. Тут Ви можете пити італійську
+												зернову каву або чай та спостерігати за грою
+											</li>
+											<li class="pack-card__item">
+												Міні-діскотека
+											</li>
+										</ul>
+										<p class="pack-card__price">
+											Від: 1200 грн
+										</p>
+										<button class="pack-card__btn">
+											Обрати
+										</button>
+										</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="pack-card pack-card--stan">
+										<p class="pack-card__title">
+											Стандарт
+										<ul class="pack-card__list">
+											<li class="pack-card__item">
+												5 локацій з випробуваннями
+											</li>
+											<li class="pack-card__item">
+												Зона відпочинку на 25 особ. Тут Ви можете пити італійську
+												зернову каву або чай та спостерігати за грою.
+											</li>
+											<li class="pack-card__item">
+												Супровід досвідчених інструкторів
+											</li>
+											<li class="pack-card__item">
+												Мильні кульки
+											</li>
+											<li class="pack-card__item">
+												Зона відпочинку на 25 особ. Тут Ви можете пити італійську
+												зернову каву або чай та спостерігати за грою
+											</li>
+											<li class="pack-card__item">
+												Міні-діскотека
+											</li>
+										</ul>
+										<p class="pack-card__price">
+											Від: 1200 грн
+										</p>
+										<button class="pack-card__btn">
+											Обрати
+										</button>
+										</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="pack-card pack-card--prem">
+										<p class="pack-card__title">
+											Преміум
+										<ul class="pack-card__list">
+											<li class="pack-card__item">
+												5 локацій з випробуваннями
+											</li>
+											<li class="pack-card__item">
+												Зона відпочинку на 25 особ. Тут Ви можете пити італійську
+												зернову каву або чай та спостерігати за грою.
+											</li>
+											<li class="pack-card__item">
+												Супровід досвідчених інструкторів
+											</li>
+											<li class="pack-card__item">
+												Мильні кульки
+											</li>
+											<li class="pack-card__item">
+												Зона відпочинку на 25 особ. Тут Ви можете пити італійську
+												зернову каву або чай та спостерігати за грою
+											</li>
+											<li class="pack-card__item">
+												Міні-діскотека
+											</li>
+										</ul>
+										<p class="pack-card__price">
+											Від: 1200 грн
+										</p>
+										<button class="pack-card__btn">
+											Обрати
+										</button>
+										</p>
+									</div>
+								</div>
+							</div>
+							@@include('./components/base/_slider-nav.html', {
+							'class': 'step1__nav',
+							'prev': 'step1__prev',
+							'next': 'step1__next',
+							'pagination': 'step1__pagination',
+							})
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="step2">
+				<div class="step2__container">
+					<p class="step2__title step-title"><span>Крок 2:</span> Оберіть кількість гравців</p>
+					<div class="step2__spoiler select">
+						<div class="step2__preview select__preview">
+							<p class="select__current">1</p>
+							<div class="select__icon"></div>
+						</div>
+						<div class="step2__wrapper select__wrapper">
+							<div class="step2__body select__body">
+								<input class="step2__input select__input" type="radio" name="people" id="radio_1">
+								<label class="step2__label select__label" for="radio_1">1</label>
+								<input class="step2__input select__input" type="radio" name="people" id="radio_2">
+								<label class="step2__label select__label" for="radio_2">2</label>
+								<input class="step2__input select__input" type="radio" name="people" id="radio_3">
+								<label class="step2__label select__label" for="radio_3">3</label>
+								<input class="step2__input select__input" type="radio" name="people" id="radio_4">
+								<label class="step2__label select__label" for="radio_4">4</label>
+								<input class="step2__input select__input" type="radio" name="people" id="radio_5">
+								<label class="step2__label select__label" for="radio_5">5</label>
+								<input class="step2__input select__input" type="radio" name="people" id="radio_6">
+								<label class="step2__label select__label" for="radio_6">6</label>
+								<input class="step2__input select__input" type="radio" name="people" id="radio_7">
+								<label class="step2__label select__label" for="radio_7">7</label>
+								<input class="step2__input select__input" type="radio" name="people" id="radio_8">
+								<label class="step2__label select__label" for="radio_8">8</label>
+								<input class="step2__input select__input" type="radio" name="people" id="radio_9">
+								<label class="step2__label select__label" for="radio_9">9</label>
+								<input class="step2__input select__input" type="radio" name="people" id="radio_10">
+								<label class="step2__label select__label" for="radio_10">
+									<p>
+										10 <span>(максимум)</span>
+									</p>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="step3">
+				<div class="step3__container">
+					<p class="step3__text">Вартість замовлення: <span>1200 грн</span></p>
+					<button class="step3__button order-quest-show">Замовити</button>
+				</div>
+			</section>
+			<section class="heroes">
+				<div class="heroes__container">
+					<p class="heroes__title">Наші герої</p>
+					@@include('./components/base/_vertical-gallery.html')
+					@@include('./components/base/_vertical-gallery-pop-up.html')
+				</div>
+			</section>
+			@@include('./components/base/_comments.html')
+			@@include('./components/base/_faq.html')
+			@@include('./components/base/_ceo.html')
+		</main>
+		@@include('./components/structure/_footer.html')
+	</div>
+	@@include('./components/structure/_scripts.html', {
+	'swiper': 'true',
+	'script': 'quest2',
+	'url': 'false',
+	})
+
+
+</body>
+
+</html>

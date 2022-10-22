@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+@@include('./components/structure/_head.html', {
+'lang':'en',
+'css': 'category2',
+'title': 'category2',
+'swiper': 'true',
+})
+
+
+<body class="category2 lock">
+	<div class="preloader">
+		<div class="preloader__wrapper">
+			@@include('./components/icons/_logo.html')
+		</div>
+	</div>
+	<div class="wrapper">
+		@@include('./components/structure/_header.html')
+		<main>
+			<div class="hero">
+				<div class="hero__container">
+					<h1 class="hero__title">Квест кімнати у Дніпрі</h1>
+					<div class="hero__spoiler">
+						<div class="hero__spoiler-preview">
+							<p class="hero__spoiler-title">Цей абзац теж до 200 символів. ЦЕ текст з призивом до дій. Наприклад: Наша команда теж обожнює квести, тому ми дуже ретельно продумуємо логіку та сценарій, створюємо інтерьєр та обираємо максимально реалістичний реквізир. Пориньте в захоплюючу атмосферу гри на здужайте всі наші головоломки! Цей абзац теж до 200 символів. ЦЕ текст з призивом до дій. Наприклад: Наша команда теж обожнює квести, тому ми дуже ретельно продумуємо логіку та сценарій,
+								створюємо інтерьєр та обираємо максимально
+								реалістичний реквізир. Пориньте в захоплюючу атмосферу гри на здужайте всі наші головоломки!</p>
+						</div>
+						<div class="hero__spoiler-wrapper">
+							<div class="hero__spoiler-body">
+								<p class="hero__spoiler-text">
+									Цей абзац теж до 200 символів. ЦЕ текст з призивом до дій. Наприклад: Наша команда теж обожнює квести, тому ми дуже ретельно продумуємо логіку та сценарій, створюємо інтерьєр та обираємо максимально реалістичний реквізир. Пориньте в захоплюючу атмосферу гри на здужайте всі наші головоломки! Цей абзац теж до 200 символів. ЦЕ текст з призивом до дій. Наприклад: Наша команда теж обожнює квести, тому ми дуже ретельно продумуємо логіку та сценарій, створюємо інтерьєр та
+									обираємо максимально
+									реалістичний реквізир. Пориньте в захоплюючу атмосферу гри на здужайте всі наші головоломки!
+								</p>
+							</div>
+						</div>
+					</div>
+					<button class="hero__button">Дивитись більше</button>
+				</div>
+			</div>
+			<section class="cards">
+				<div class="cards__container">
+					@@include('./components/base/_card.html', {
+					'link': 'true',
+					'img': '1',
+					'title': 'Майнкрафт',
+					'age': '16+',
+					})
+					@@include('./components/base/_card.html', {
+					'link': 'true',
+					'img': '2',
+					'title': 'День народження в стилі',
+					'age': '6+'
+					})
+					@@include('./components/base/_card.html', {
+					'link': 'true',
+					'img': '3',
+					'title': 'Врятувати професора Харіса',
+					'age': '6+'
+					})
+					@@include('./components/base/_card.html', {
+					'link': 'true',
+					'img': '4',
+					'title': 'Write correct title',
+					'color': 'red',
+					'svg': 'discount',
+					'text': 'Акція',
+					'age': '6+',
+					})
+					@@include('./components/base/_card.html', {
+					'link': 'true',
+					'img': '5',
+					'title': 'Silent Hill',
+					'color': 'yellow',
+					'svg': 'preorder',
+					'text': 'Предзамовлення',
+					'age': '16+',
+					})
+					@@include('./components/base/_card.html', {
+					'link': 'true',
+					'img': '6',
+					'title': 'Гаррі Поттер',
+					'color': 'green',
+					'svg': 'lightning',
+					'text': 'Новинка',
+					'age': '12+',
+					})
+				</div>
+			</section>
+			@@include('./components/base/_video.html', {
+			'heading': 'Відео Квест кімнати у Дніпрі'
+			})
+			<section class="reviews">
+				<div class='reviews__background'>
+					<picture>
+						<source type='image/webp' data-src-webp="img/reviews-bg.webp" srcset='@load.webp'>
+						<img style="width:1px; height: 1px;" data-src-img="img/reviews-bg.png" src='@load.png' alt='Background image'>
+					</picture>
+				</div>
+				<div class="reviews__container">
+					<p class="reviews__title">
+						Відгуки клієнтів
+					</p>
+					<div class="reviews__slider slider">
+						<div class="reviews__wrapper swiper-wrapper">
+							<div class="reviews__slide swiper-slide" data-slide="1">
+								<div class="reviews__head">
+									<p class="reviews__head-suptitle">
+										Квест:
+									</p>
+									<p class="reviews__head-title">
+										“День народження в стилі супер-героя”
+									</p>
+								</div>
+								<div class="reviews__body reviews__body--video">
+									<picture>
+										<source type="image/webp" data-src-webp="img/gallery/comment1.webp" srcset="@img/load.webp">
+										<img style="width:1px; height: 1px;" data-src-img="img/gallery/comment1.jpg" src="@img/load.png" alt="video preview">
+									</picture>
+									<svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M51.9611 34.7365L19.4923 53.2901C18.159 54.052 16.5 53.0893 16.5 51.5536V33V14.4464C16.5 12.9107 18.159 11.948 19.4923 12.7099L51.9611 31.2635C53.3048 32.0313 53.3048 33.9687 51.9611 34.7365Z" fill="#9ACF16" />
+									</svg>
+									<p class="reviews__body-name">
+										Олена Малахова
+									</p>
+									<div class="reviews__footer">
+										<p class="reviews__footer-date">
+											12.09.2022
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="reviews__slide swiper-slide" data-slide="2">
+								<div class="reviews__head">
+									<p class="reviews__head-suptitle">
+										Квест:
+									</p>
+									<p class="reviews__head-title">
+										“День народження в стилі супер-героя”
+									</p>
+								</div>
+								<div class="reviews__body">
+									<p class="reviews__body-name">
+										Олена Малахова
+									</p>
+									<p class="reviews__body-text reviews__body-text--margin">
+										Текст відгука, Текст відгука, Текст, символів 200 відгука, Текст
+										ідгука, Текст
+										відгука, Текст відгука, Текст ідгука, Текст відгука, Текст відгука.
+										Текст
+										відгука, Текст ідгука
+									</p>
+									<div class="reviews__footer">
+										<p class="reviews__footer-date">
+											12.09.2022
+										</p>
+										<div class="reviews__footer-btn">
+											Детальніше
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="reviews__slide swiper-slide" data-slide="3">
+								<div class="reviews__head">
+									<p class="reviews__head-suptitle">
+										Квест:
+									</p>
+									<p class="reviews__head-title">
+										“День народження в стилі супер-героя”
+									</p>
+								</div>
+								<div class="reviews__wrap">
+									<div class="reviews__body">
+										<p class="reviews__body-name">
+											Олена Малахова
+										</p>
+										<p class="reviews__body-text">
+											“ Текст відгука, Текст відгука, Текст, символів 200 відгука, Текст
+											ідгука,
+											Текст відгука, Текст відгука, Текст ідгука, Текст відгука “
+										</p>
+										<p class="reviews__footer-date">
+											12.09.2022
+										</p>
+									</div>
+									<div class="reviews__img">
+										<picture>
+											<source type='image/webp' data-src-webp="img/reviews-img.webp" srcset='@load.webp'>
+											<img style="width:1px; height: 1px;" data-src-img="img/reviews-img.png" src='@load.png' alt='reviews screenshot'>
+										</picture>
+									</div>
+								</div>
+							</div>
+							<div class="reviews__slide swiper-slide" data-slide="4">
+								<div class="reviews__head">
+									<p class="reviews__head-suptitle">
+										Квест:
+									</p>
+									<p class="reviews__head-title">
+										“День народження в стилі супер-героя”
+									</p>
+								</div>
+								<div class="reviews__body">
+									<p class="reviews__body-name">
+										Олена Малахова
+									</p>
+									<p class="reviews__body-text reviews__body-text--margin">
+										Текст відгука, Текст відгука, Текст, символів 200 відгука, Текст
+										ідгука, Текст
+										відгука, Текст відгука, Текст ідгука, Текст відгука, Текст відгука.
+										Текст
+										відгука, Текст ідгука
+									</p>
+									<div class="reviews__footer">
+										<p class="reviews__footer-date">
+											12.09.2022
+										</p>
+										<div class="reviews__footer-btn">
+											Детальніше
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="reviews__slide swiper-slide" data-slide="5">
+								<div class="reviews__head">
+									<p class="reviews__head-suptitle">
+										Квест:
+									</p>
+									<p class="reviews__head-title">
+										“День народження в стилі супер-героя”
+									</p>
+								</div>
+								<div class="reviews__wrap">
+									<div class="reviews__body">
+										<p class="reviews__body-name">
+											Олена Малахова
+										</p>
+										<p class="reviews__body-text">
+											“ Текст відгука, Текст відгука, Текст, символів 200 відгука, Текст
+											ідгука,
+											Текст відгука, Текст відгука, Текст ідгука, Текст відгука “
+										</p>
+										<p class="reviews__footer-date">
+											12.09.2022
+										</p>
+									</div>
+									<div class="reviews__img">
+										<picture>
+											<source type='image/webp' data-src-webp="img/reviews-img.webp" srcset='@load.webp'>
+											<img style="width:1px; height: 1px;" data-src-img="img/reviews-img.png" src='@load.png' alt='reviews screenshot'>
+										</picture>
+									</div>
+								</div>
+							</div>
+						</div>
+						@@include('./components/base/_slider-nav.html', {
+						'class': 'reviews__nav',
+						'prev': 'reviews__prev',
+						'next': 'reviews__next',
+						'pagination': 'reviews__pagination',
+						})
+					</div>
+				</div>
+			</section>
+			<section class="reviews-popup">
+				<div class="reviews-popup__fixed">
+					<div class="reviews-popup__view">
+						<div class="reviews-popup__wrapper">
+							<div class="reviews-popup__item reviews-popup__item--video">
+								<div class="reviews-popup__close">
+									<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M29.779 14.2218L14.2227 29.7781M29.779 29.778L14.2227 14.2217" stroke="#101010" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+								<div class="reviews-popup__video">
+									<iframe class="first-view" data-src="https://www.youtube.com/embed/z-99see1eKw" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<div class="reviews-popup__poster">
+										<picture>
+											<source type="image/jpg" data-src-webp="img/gallery/comment1.webp" srcset="@img/load.webp">
+											<img style="width:1px; height: 1px;" data-src-img="img/gallery/comment1.jpg" src="@img/load.png" alt="review preview">
+										</picture>
+									</div>
+									<svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M51.9611 34.7365L19.4923 53.2901C18.159 54.052 16.5 53.0893 16.5 51.5536V33V14.4464C16.5 12.9107 18.159 11.948 19.4923 12.7099L51.9611 31.2635C53.3048 32.0313 53.3048 33.9687 51.9611 34.7365Z" fill="#9ACF16" />
+									</svg>
+								</div>
+							</div>
+							<div class="reviews-popup__item reviews-popup__item--text">
+								<div class="reviews-popup__close">
+									<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M29.779 14.2218L14.2227 29.7781M29.779 29.778L14.2227 14.2217" stroke="#101010" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+								<p class="reviews-popup__text">
+									Текст відгука, Текст відгука, Текст, символів 200 відгука, Текст ідгука,
+									Текст відгука, Текст відгука, Текст ідгука, Текст відгука, Текст відгука.
+									Текст відгука, Текст ідгука, Текст відгука. Текст ідгука, Текст відгука,
+									Текст відгука. Текст відгука, Текст ідгука, Текст відгука.Текст відгука,
+									Текст відгука, Текст, символів 200 відгука
+								</p>
+							</div>
+							<div class="reviews-popup__item reviews-popup__item--img">
+								<div class="reviews-popup__close">
+									<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M29.779 14.2218L14.2227 29.7781M29.779 29.778L14.2227 14.2217" stroke="#101010" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</div>
+								<div class="reviews-popup__screen">
+									<picture>
+										<source type="image/webp" data-src-webp="img/reviews-img.webp" srcset="@img/load.webp">
+										<img style="width:1px; height: 1px;" data-src-img="img/reviews-img.png" src="@img/load.png" alt="review screen">
+									</picture>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			@@include('./components/base/_ceo.html')
+		</main>
+		@@include('./components/structure/_footer.html')
+	</div>
+	@@include('./components/structure/_scripts.html', {
+	'swiper': 'true',
+	'script': 'category2',
+	'url': 'false',
+	})
+
+
+
+</body>
+
+</html>

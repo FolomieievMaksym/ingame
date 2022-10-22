@@ -1,0 +1,264 @@
+.hero {
+   @media (max-width: 743px) {
+      padding-top: 24px;
+   }
+   @media (min-width: 744px) and (max-width: 999px) {
+      padding-top: 20px;
+   }
+   @media (max-width: 999px) {
+      margin-bottom: 70px;
+   }
+   @media (min-width: 1000px) {
+      margin-bottom: percent(120, 1920);
+      padding-top: 15px;
+   }
+
+   // .hero__filter
+   &__filter {
+      @media (max-width: 743px) {
+         padding-left: percent(12, 375);
+         padding-right: percent(12, 375);
+      }
+
+      @media (min-width: 744px) {
+         padding-left: percent(30, 744);
+         padding-right: percent(30, 744);
+      }
+
+      @media (min-width: 1000px) {
+         display: flex;
+         justify-content: space-between;
+      }
+   }
+
+   // .hero__filter-block
+   &__filter-block,
+   &__filter-block-second {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+   }
+
+   &__filter-block {
+      gap: 10px;
+
+      .hero__filter-btn-styles {
+         border: 1px solid rgba(16, 16, 16, 0.2);
+         box-sizing: border-box;
+         padding: 9px 12px;
+         // border-radius: 10%;
+      }
+
+      .hero__filter-btn-styles:first-child {
+         @media (max-width: 999px) {
+            padding: 10px 20px;
+         }
+
+         @media (min-width: 1000px) {
+            padding: 23px 30px;
+         }
+      }
+
+      .hero__filter-btn-styles:hover {
+         filter: drop-shadow(0px 4px 14px rgba(104, 139, 16, 0.6));
+         color: $light;
+         background-color: $greenHover;
+         border-color: transparent;
+      }
+
+      .hero__filter-btn-styles:active {
+         opacity: 0.6;
+         transition: none;
+      }
+   }
+
+   &__filter-block-second {
+      @media (max-width: 374px) {
+         column-gap: 25px;
+      }
+
+      @media (min-width: 375px) {
+         column-gap: 50px;
+      }
+
+      .hero__filter-btn-styles {
+         &:not(button:last-child)::after {
+            content: "";
+            position: absolute;
+            background-color: rgba(16, 16, 16, 0.2);
+            width: 1px;
+            height: 22px;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+
+            @media (max-width: 374px) {
+               right: -14px;
+            }
+
+            @media (min-width: 375px) {
+               right: -27px;
+            }
+
+            @media (min-width: 1000px) {
+               height: 30px;
+            }
+         }
+
+         &:hover {
+            color: $orangeHover;
+         }
+
+         &:active {
+            color: rgba(144, 199, 94, 0.6);
+         }
+      }
+   }
+
+   &__filter-btn-styles {
+      transition: all 0.3s ease 0s;
+      font-family: inherit;
+      cursor: pointer;
+      color: $dark;
+      position: relative;
+
+      @media (max-width: 999px) {
+         @include fl(16, 22);
+      }
+
+      @media (min-width: 1000px) and (max-width: 1199px) {
+         @include fl(19, 25);
+      }
+
+      @media (min-width: 1200px) and (max-width: 1399px) {
+         @include fl(20, 26);
+      }
+
+      @media (min-width: 1400px) and (max-width: 1599px) {
+         @include fl(21, 27);
+      }
+
+      @media (min-width: 1600px) and (max-width: 1799px) {
+         @include fl(22, 28);
+      }
+
+      @media (min-width: 1800px) and (max-width: 1919px) {
+         @include fl(23, 29);
+      }
+
+      @media (min-width: 1920px) {
+         @include fl(24, 30);
+      }
+   }
+
+   .active1 {
+      color: $light;
+      background-color: $greenHover;
+      border-color: rgba(144, 199, 94, 1);
+
+      &:hover {
+         transition: none;
+         filter: none;
+         color: $light;
+         background-color: $greenHover;
+      }
+
+      &:active {
+         opacity: 1;
+      }
+   }
+
+   .active2 {
+      color: $greenHover;
+      font-weight: 700;
+
+      &:hover {
+         color: $greenHover;
+      }
+
+      &:active {
+         transition: none;
+      }
+   }
+
+   // .hero__body
+   &__body {
+      @extend %container;
+      @media (min-width: 1000px) and (max-width: 1399px) {
+         padding-left: percent(30, 744);
+         padding-right: percent(30, 744);
+      }
+   }
+
+   &__blog-nav {
+      max-width: max-content;
+      margin: 36px auto 0;
+      .swiper-pagination-bullet {
+         @media (min-width: 1000px) {
+            background: $greenItem;
+            opacity: 0.2;
+            &-active {
+               background: $greenItem;
+               opacity: 1;
+            }
+         }
+      }
+      @media (min-width: 1000px) {
+         display: none;
+      }
+   }
+   &__blog-prev,
+   &__blog-next {
+      @media (min-width: 1000px) {
+         path {
+            stroke: $dark;
+         }
+      }
+   }
+}
+.last {
+   background-color: $dark;
+   @media (max-width: 743px) {
+      margin-bottom: 40px;
+   }
+   @media (min-width: 744px) and (max-width: 999px) {
+      margin-bottom: 60px;
+   }
+   @media (min-width: 1000px) {
+      margin-bottom: percent(120, 1920);
+   }
+   &__container {
+      @media (max-width: 999px) {
+         padding-top: 40px;
+         padding-bottom: 40px;
+      }
+      @media (min-width: 1000px) {
+         padding-top: 80px;
+         padding-bottom: percent(120, 1920);
+      }
+   }
+   &__title {
+      font-weight: 700;
+      text-align: center;
+      color: $light;
+      @media (max-width: 999px) {
+         margin-bottom: 24px;
+         @include fl(16, 24);
+      }
+      @media (min-width: 1000px) {
+         margin-bottom: 40px;
+      }
+      @media (min-width: 1000px) and (max-width: 1199px) {
+         @include fl(18, 24);
+      }
+      @media (min-width: 1200px) and (max-width: 1399px) {
+         @include fl(20, 26);
+      }
+      @media (min-width: 1400px) and (max-width: 1599px) {
+         @include fl(22, 28);
+      }
+      @media (min-width: 1600px) {
+         @include fl(24, 30);
+      }
+   }
+}

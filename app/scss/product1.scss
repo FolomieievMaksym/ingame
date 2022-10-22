@@ -1,0 +1,35 @@
+// Подлкючение базовых стилей
+@import "./default/variables";
+@import "./default/null";
+@import "./default/mixins";
+@import "./default/function";
+@import "./default/patterns";
+@import "./default/fonts";
+@import "./default/global";
+@import "./default/text";
+
+// Header / Footer
+@import "./components/structure/header";
+@import "./components/structure/footer";
+
+// Подключение стилей базовых компонентов
+@import "./components/base/_horizontal-gallery";
+@import "./components/base/second-nav";
+@import "./components/base/gallery-form";
+@import "./components/base/video";
+@import "./components/base/reviews";
+@import "./components/base/slider-nav";
+@import "./components/base/feedback";
+@import "./components/base/faq";
+@import "./components/base/faq-spoiler";
+@import "./components/base/ceo";
+@import "./components/base/propose-form";
+@import "./components/base/certif-popup";
+@import "./components/base/order-quest-pop-up";
+@import "./components/base/cards";
+@import "./components/base/product-pop-up";
+@import "./components/base/product-gallery";
+
+//Подключение стилей конкретной страницы
+// ! Переменовать текущий файл и файл подлючающий стили страницы ниже(renameMe) в нужное имя (имеется ввиду файл который нужно создать в папке app/scss/pages), после чего удалить эту строку
+@import "./pages/product1";

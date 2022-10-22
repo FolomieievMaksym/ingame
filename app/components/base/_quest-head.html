@@ -1,0 +1,40 @@
+<div class="quest-head">
+	<div class="quest-head__background">
+		<picture>
+			<source type="image/webp" data-src-webp="img/gallery/@@img.webp" srcset="@img/load.webp" />
+			<img style="width:1px; height: 1px;" data-src-img="img/gallery/@@img.jpg" src="@img/load.png" alt="bacgkround image" />
+		</picture>
+	</div>
+	<div class="quest-head__container">
+		<h1 class="quest-head__title">@@title</h1>
+		<div class="quest-head__body">
+			<div class="quest-head__item">
+				<div class="quest-head__address">
+					<p class="quest-head__label">Адреса:</p>
+					<div class="quest-head__row">
+						@@include('../icons/_location.html')
+						<p class="quest-head__uniq">@@text</p>
+					</div>
+				</div>
+			</div>
+			<div class="quest-head__item">@@include('./_fear.html')</div>
+			<div class="quest-head__item">@@include('./_difficulty.html')</div>
+			<div class="quest-head__item">
+				<p class="quest-head__label">Жанр:</p>
+				<div class="quest-head__row">
+					<i class="genre"></i>
+					<p>Трилер/ пригоди</p>
+					<i class="genre-ask"></i>
+				</div>
+			</div>
+			<p class="quest-head__price">1200 грн</p>
+		</div>
+		<p class="quest-head__text">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+			ut labore et dolore
+			magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+			aliquip ex ea commodo
+			consequat. Duis aute irure dolor
+		</p>
+	</div>
+</div>

@@ -1,0 +1,59 @@
+<a @@if(context.link) {href="quest1.html" } class="cards__card card">
+	<div class="card__top-preview">
+		@@if(context.color) {
+		<div class="card__what card__what_@@color">
+			<div class="card__icon">
+				@@if (context.svg == 'discount') {
+				@@include('./_discount.html')
+				}
+				@@if (context.svg == 'lightning') {
+				@@include('./_lightning.html')
+				}
+				@@if (context.svg == 'preorder') {
+				@@include('./_preorder.html')
+				}
+			</div>
+			<p class="card__subtext">@@text</p>
+		</div>
+		}
+		<div class="card__age">@@age</div>
+
+	</div>
+	<div class='card__image'>
+		<picture>
+			<source type='image/webp' data-src-webp="img/gallery/card@@img.webp" srcset='@img/load.webp'>
+			<img style="width:1px; height: 1px;" data-src-img="img/gallery/card@@img.jpg" src='@img/load.png' alt='Quest preview'>
+		</picture>
+	</div>
+	<!-- <div class='card__image'>
+		<picture>
+			<source type='image/webp' srcset='@img/gallery/card@@img.webp'>
+			<img src='@img/gallery/card@@img.jpg' alt='Quest preview'>
+		</picture>
+	</div> -->
+	<div class="card__content">
+		<div class="card__preview">
+			<div class="card__left">
+				<h3 class="card__title">@@title</h3>
+				<p class="card__text">З акторами</p>
+			</div>
+			<ul class="card__about">
+				<li>
+					@@include('../icons/_team.html')
+					<p><span>5-10</span> чоловік</p>
+				</li>
+				<li>
+					@@include('../icons/_location.html')
+					<div>
+						<p>Дніпро</p>
+						<p>(Лівий берег)</p>
+					</div>
+				</li>
+				<li>
+					@@include('../icons/_wallet.html')
+					<p><span>1200 грн</span></p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</a>

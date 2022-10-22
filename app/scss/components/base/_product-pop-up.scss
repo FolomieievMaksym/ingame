@@ -1,0 +1,168 @@
+.product-pop-up {
+   &.active {
+      z-index: 111;
+      opacity: 1;
+      pointer-events: all;
+      transition: opacity 0.5s ease 0s, z-index 0s ease 0s;
+   }
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: rgba(0, 0, 0, 0.4);
+   width: 100vw;
+   height: 100vh;
+   z-index: 0;
+   pointer-events: none;
+   opacity: 0;
+   transition: opacity 0.5s ease 0s, z-index 0s ease 1.5s;
+
+   &__wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      overflow-y: auto;
+      @media (min-width: 744px) and (max-width: 999px) {
+         padding: 30px; // ! отступы от краев
+      }
+      @media (min-width: 1000px) and (max-width: 1399px) {
+         padding-left: percent(90, 1920);
+         padding-right: percent(90, 1920);
+         padding-top: percent(90, 1920);
+      }
+      @media (min-width: 1400px) {
+         padding-left: percent(270, 1920);
+         padding-right: percent(270, 1920);
+         padding-top: percent(180, 1920);
+      }
+   }
+   &__container {
+      position: relative;
+   }
+   &__body {
+      position: relative;
+      background-color: $light;
+      // overflow-y: auto;
+      // max-height: 100%; // ! Запрещаем блоку быть большего размера чем задано родителем (padding: 200px)
+      @media (max-width: 743px) {
+         padding-left: percent(12, 375);
+         padding-right: percent(12, 375);
+         padding-top: 54px;
+         padding-bottom: 40px;
+      }
+      @media (min-width: 744px) and (max-width: 999px) {
+         padding-left: percent(20, 684);
+         padding-right: percent(20, 684);
+         padding-top: 54px;
+         padding-bottom: 40px;
+         margin-bottom: 50px;
+      }
+      @media (min-width: 1000px) {
+         // padding-left: percent(6 0, 1380);
+         // padding-right: percent(60, 1380);
+         padding-left: 30px;
+         padding-right: 30px;
+         padding-top: 70px;
+         padding-bottom: 70px;
+         margin-bottom: percent(180, 1920);
+      }
+   }
+
+   // .person-pop-up__close-icon
+
+   &__close-icon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+      transition: all 0.3s ease;
+      &:hover {
+         .person-pop-up__close-icon-wrapper {
+            transform: scale(1.5);
+         }
+      }
+   }
+
+   // .person-pop-up__close-icon-wrapper
+
+   &__close-icon-wrapper {
+      transition: all 0.3s ease;
+
+      position: relative;
+      span {
+         display: inline-block;
+         width: 100%;
+         height: 1px;
+         background-color: $dark;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         &:first-child {
+            transform: translate(-50%, -50%) rotate(-45deg);
+         }
+         &:last-child {
+            transform: translate(-50%, -50%) rotate(45deg);
+         }
+      }
+      @media (max-width: 743px) {
+         width: 12px;
+         height: 12px;
+      }
+      @media (min-width: 744px) and (max-width: 999px) {
+         width: 16px;
+         height: 16px;
+      }
+      @media (min-width: 1000px) {
+         width: 14px;
+         height: 14px;
+      }
+   }
+
+   &__content {
+      @media (min-width: 1000px) {
+         display: flex;
+         align-items: center;
+         column-gap: 20px;
+
+         > :first-child {
+            flex: 0 0 58%;
+            flex: 0 0 61%;
+         }
+
+         > :last-child {
+            flex: 0 0 calc(39% - 20px);
+         }
+         .horizontal-gallery__image-big {
+            padding-bottom: percent(531, 672);
+         }
+         .horizontal-gallery__image-small {
+            padding-bottom: percent(94, 119);
+         }
+      }
+   }
+   &__text {
+      @media (max-width: 999px) {
+         @include fl(18, 22);
+         margin-top: 40px;
+      }
+      @media (min-width: 1000px) {
+         margin-top: 60px;
+      }
+      @media (min-width: 1000px) and (max-width: 1199px) {
+         @include fl(20, 26);
+      }
+      @media (min-width: 1200px) and (max-width: 1399px) {
+         @include fl(22, 28);
+      }
+      @media (min-width: 1400px) {
+         @include fl(24, 30);
+      }
+   }
+}

@@ -1,0 +1,291 @@
+.quest-head {
+   position: relative;
+   overflow: hidden;
+   // .quest-head__background
+   &__background {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      &:after {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         bottom: 0;
+         right: 0;
+         z-index: 1;
+         background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000 100%);
+      }
+      img {
+         position: absolute;
+         z-index: 0;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         object-position: center;
+      }
+   }
+
+   // .quest-head__container
+   &__container {
+      position: relative;
+      z-index: 2;
+      color: $light;
+      @media (max-width: 743px) {
+         padding-left: percent(12, 375);
+         padding-right: percent(12, 375);
+         padding-top: 40px;
+         padding-bottom: 40px;
+      }
+      @media (min-width: 744px) and (max-width: 1399px) {
+         padding-left: percent(55, 744);
+         padding-right: percent(55, 744);
+         padding-top: 36px;
+         padding-bottom: 56px;
+      }
+      @media (min-width: 1400px) {
+         padding-left: percent(270, 1920);
+         // padding-right: percent(325, 1920);
+         padding-right: percent(194, 1920);
+         padding-top: percent(125, 1920);
+         padding-bottom: percent(125, 1920);
+      }
+   }
+
+   // .quest-head__title
+   &__title {
+      font-weight: 700;
+      @media (max-width: 743px) {
+         margin-bottom: 70px;
+      }
+      @media (min-width: 744px) and (max-width: 999px) {
+         margin-bottom: 80px;
+      }
+      @media (max-width: 999px) {
+         text-align: center;
+         @include fl(34, 40);
+      }
+      @media (min-width: 1000px) {
+         margin-bottom: 30px;
+      }
+      @media (min-width: 1000px) and (max-width: 1199px) {
+         @include fl(44, 54);
+      }
+      @media (min-width: 1200px) and (max-width: 1399px) {
+         @include fl(50, 60);
+      }
+      @media (min-width: 1400px) and (max-width: 1599px) {
+         @include fl(56, 66);
+      }
+      @media (min-width: 1600px) and (max-width: 1799px) {
+         @include fl(66, 76);
+      }
+      @media (min-width: 1800px) {
+         @include fl(72, 86);
+      }
+   }
+
+   // .quest-head__body
+   &__body {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      @media (max-width: 743px) {
+         justify-content: center;
+      }
+      @media (min-width: 744px) {
+         justify-content: flex-start;
+      }
+      @media (max-width: 999px) {
+         column-gap: 20px;
+         row-gap: 20px;
+         margin-bottom: 34px;
+      }
+      @media (min-width: 1000px) {
+         column-gap: 15px;
+         row-gap: 15px;
+         margin-bottom: 30px;
+      }
+   }
+
+   // .quest-head__item
+   &__item {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      @media (max-width: 666px) {
+         border-radius: 40px;
+         &:nth-child(1) {
+            padding-top: 10px;
+            padding-left: 40px;
+            padding-bottom: 6px;
+            padding-right: 36px;
+         }
+         &:nth-child(2),
+         &:nth-child(3) {
+            padding-top: 15px;
+            padding-bottom: 10px;
+            padding-right: 33px;
+            padding-left: 33px;
+         }
+         &:nth-child(4) {
+            padding-top: 15px;
+            padding-bottom: 13px;
+            padding-right: 39px;
+            padding-left: 39px;
+            p {
+               margin-bottom: 2px;
+            }
+         }
+      }
+      @media (min-width: 667px) and (max-width: 999px) {
+         border-radius: 40px;
+         &:nth-child(1) {
+            padding-top: 14px;
+            padding-left: 40px;
+            padding-bottom: 13px;
+            padding-right: 35px;
+         }
+         &:nth-child(2),
+         &:nth-child(3) {
+            padding-top: 19px;
+            padding-bottom: 13px;
+            padding-left: 35px;
+            padding-right: 35px;
+         }
+         &:nth-child(4) {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-right: 39px;
+            padding-left: 39px;
+            p {
+               margin-bottom: 2px;
+            }
+         }
+      }
+      @media (min-width: 1000px) {
+         border-radius: 300px;
+         padding-left: 35px;
+         padding-right: 36px;
+         padding-top: 16px;
+         padding-bottom: 10px;
+         &:nth-child(4) {
+            padding-left: 35px;
+            padding-right: 36px;
+            padding-top: 16px;
+            padding-bottom: 14px;
+         }
+      }
+      > p {
+         margin-bottom: 4px;
+         font-weight: 500;
+         @include fl(12, 16);
+      }
+      &:nth-child(1) {
+         @media (min-width: 1000px) {
+            // padding-right: 10px;
+            padding-right: 33px;
+         }
+      }
+      img {
+         @media (max-width: 999px) {
+            width: 16px;
+            height: 16px;
+            &:not(:first-child) {
+               margin-left: -3px;
+            }
+         }
+         @media (min-width: 1000px) {
+            width: 24px;
+            height: 24px;
+            &:not(:first-child) {
+               margin-left: -3px;
+            }
+         }
+      }
+   }
+
+   &__label {
+      @include fl(12, 16);
+      margin-bottom: 4px;
+   }
+   .fear,
+   .difficulty {
+      p {
+         @include fl(12, 16);
+         margin-bottom: 4px;
+      }
+   }
+   // .quest-head__row
+   &__row {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+      p {
+         @include fl(16, 20);
+      }
+      svg {
+         flex: 0 0 24px;
+         circle {
+            stroke: $light;
+         }
+         path {
+            fill: $light;
+         }
+      }
+      i {
+         &:last-of-type {
+            opacity: 0.3;
+         }
+         &::before {
+            @include fl(20);
+         }
+      }
+   }
+
+   &__uniq {
+      @media (min-width: 1000px) {
+         // letter-spacing: 0.024em;
+      }
+      span {
+         position: relative;
+         &:after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: $light;
+         }
+      }
+   }
+
+   // .quest-head__price
+   &__price {
+      font-weight: 700;
+      @include fl(37, 44.4);
+   }
+
+   // .quest-head__text
+   &__text {
+      @media (max-width: 999px) {
+         @include fl(16, 22);
+      }
+      @media (min-width: 1000px) {
+         max-width: 960px;
+      }
+      @media (min-width: 1000px) and (max-width: 1399px) {
+         @include fl(20, 26);
+      }
+      @media (min-width: 1400px) and (max-width: 1799px) {
+         @include fl(22, 28);
+      }
+      @media (min-width: 1800px) {
+         @include fl(24, 30);
+      }
+   }
+}

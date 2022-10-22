@@ -1,0 +1,20 @@
+<section class="video-block">
+	<div class="video-block__container">
+		@@if(context.text) {<p class="video-block__text">@@text</p>}
+		@@if(context.title) {<p class="video-block__text video-block__text_bold">@@title</p>}
+		@@if(context.heading) {<p class="video-block__title">@@heading</p>}
+		<div class='video-block__video'>
+			<div class='video-block__preview'>
+				<div class="video-block__icon">
+					@@include('../icons/_play.html')
+				</div>
+				<picture>
+					<source type='image/webp' data-src-webp="img/gallery/preview.webp" srcset='@load.webp'>
+					<img style="width:1px; height: 1px;" data-src-img="img/gallery/preview.jpg" src='@load.png' alt='video preview'>
+				</picture>
+			</div>
+			<!-- <video preload="none" class="first-view" controls playsinline src="@img/video.mp4"></video> -->
+			<iframe class="first-view" data-src="https://www.youtube.com/embed/z-99see1eKw" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>
+</section>
